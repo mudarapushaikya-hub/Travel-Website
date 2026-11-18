@@ -1,0 +1,327 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+
+    <style>
+      * {
+        box-sizing: border-box;
+        margin: 0px;
+        padding: 0px;
+      }
+
+      .nav-bar ul {
+        display: flex;
+        background-color: grey;
+        gap: 30px;
+        justify-content: center;
+        padding-top: 25px;
+        padding-bottom: 25px;
+      }
+
+      .nav-bar ul li a {
+        text-decoration: none;
+      }
+
+      .nav-bar ul li {
+        list-style: none;
+      }
+
+      .main::before {
+        content: "";
+        background: url("bcg_img.avif") no-repeat center center/cover;
+        position: absolute;
+        top: 65px;
+        left: 0px;
+        width: 100%;
+        height: 100%;
+        opacity: 0.5;
+      }
+
+      /*.main{
+            padding-left: 200px;
+            padding-top: 200px;
+        }*/
+      .text {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        height: 600px;
+      }
+
+      .para p {
+        display: flex;
+        justify-content: center;
+      }
+
+      .cards {
+        padding-top: 20px;
+        display: flex;
+        gap: 50px;
+        justify-content: center;
+        /*justify-content: space-around;*/
+      }
+
+      .image {
+        position: relative;
+      }
+
+      .cards img {
+        width: 300px;
+        height: 250px;
+      }
+
+      .cards h2 {
+        position: absolute;
+        top: 90px;
+        left: 100px;
+        padding: 20px;
+        background-color: white;
+        color: blue;
+      }
+
+      .line {
+        margin-top: 40px;
+        display: flex;
+        gap: 50px;
+        justify-content: center;
+        padding: 50px;
+        background-color: rgb(232, 230, 230);
+      }
+
+      .highlight1 {
+        width: 70%;
+        margin: auto;
+      }
+
+      .image1 img {
+        margin-top: 80px;
+        width: 900px;
+        height: 800px;
+      }
+
+      .icon1info {
+        display: flex;
+        gap: 10px;
+        padding-top: 10px;
+      }
+
+      .info {
+        margin-top: 10px;
+      }
+
+      .pictures {
+        display: flex;
+        margin-top: 50px;
+        justify-content: space-around;
+      }
+      .imgpara img {
+        width: 300px;
+        height: 300px;
+      }
+
+      .imgpara {
+        position: relative;
+      }
+
+      .imgpara p {
+        width: 300px;
+        height: 300px;
+        background-color: transparent;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        color: grey;
+        top: 0px;
+        left: 0px;
+        position: absolute;
+      }
+
+      footer {
+        margin-top: 40px;
+        background-color: grey;
+        display: flex;
+        justify-content: space-between;
+        justify-content: space-around;
+      }
+
+      .leftside img {
+        width: 200px;
+        height: 200px;
+      }
+
+      .leftside {
+        display: flex;
+        gap: 30px;
+        color: white;
+      }
+
+      .rightside{
+        color: white;
+      }
+
+      input{ background-color: transparent;
+        border: 1px solid white;}
+      .checkbox-group input{background-color: transparent;
+     border: 1px solid white;}
+
+     .submit-btn{
+
+        width: 150px;
+      padding: 14px;
+      background-color: #2176ff;
+      color: #ffffff;
+      border: none;
+      font-size: 16px;
+      cursor: pointer;
+     }
+
+    </style>
+  </head>
+  <body>
+    <nav class="nav-bar">
+      <ul>
+        <li><a href="#home">Home</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#travel">Travel</a></li>
+        <li><a href="#eat">Eat</a></li>
+        <li><a href="#relax">Relax</a></li>
+        <li><a href="#videos">Videos</a></li>
+      </ul>
+    </nav>
+
+    <section class="main">
+      <section class="text">
+        <h3>Travel Blog</h3>
+        <h1>Going Places</h1>
+        <p>I haven't been everywhere, but its on my list.</p>
+      </section>
+
+      <section class="para">
+        <p>
+          I'm a paragraph. Click here to add your own text and edit me. It’s
+          easy. Just click “Edit Text” or double click me to add your own
+          content and make changes to the font.
+        </p>
+      </section>
+
+      <section class="cards">
+        <section class="image">
+          <img
+            src="https://static.wixstatic.com/media/5bfb6f_9f2519d5fc2d41f990a10dd92eb8658d.jpg/v1/fill/w_628,h_520,al_c,q_80,usm_0.66_1.00_0.01,enc_avif,quality_auto/5bfb6f_9f2519d5fc2d41f990a10dd92eb8658d.jpg"
+          />
+          <h2>Travel</h2>
+        </section>
+
+        <section class="image">
+          <img
+            src="https://static.wixstatic.com/media/5bfb6f_ea37f67cad544b348df9f3d0ff40f282.jpg/v1/fill/w_628,h_520,al_c,q_80,usm_0.66_1.00_0.01,enc_avif,quality_auto/5bfb6f_ea37f67cad544b348df9f3d0ff40f282.jpg"
+          />
+          <h2>Eat</h2>
+        </section>
+
+        <section class="image">
+          <img
+            src="https://static.wixstatic.com/media/5bfb6f_c667d0c9bd634b1aa2b29311795f3c51.jpg/v1/fill/w_630,h_520,al_c,q_80,usm_0.66_1.00_0.01,enc_avif,quality_auto/5bfb6f_c667d0c9bd634b1aa2b29311795f3c51.jpg"
+          />
+          <h2>Relax</h2>
+        </section>
+      </section>
+
+      <section class="line">
+        <h2>As featured in</h2>
+        <h2>Travel Blog</h2>
+        <h2>PLANE TOUR</h2>
+        <h2>WORLD TRAVEL</h2>
+        <h2>Sky cloud</h2>
+      </section>
+
+      <section class="highlight1">
+        <section class="image1">
+          <img src="img1.avif" />
+        </section>
+        <section class="icon1info">
+          <img src="icon.png" />
+          <section>
+            <h1>Admin</h1>
+            <p>Mar 25, 2023 .1 min read</p>
+          </section>
+        </section>
+        <section class="info">
+          <h1>The Girl from Ipanema</h1>
+          <p style="margin: 10px">
+            Create a blog post subtitle that summarizes your post in a few
+            short, punchy sentences and entices your audience to continue
+            reading....
+          </p>
+        </section>
+      </section>
+    </section>
+
+    <section class="pictures">
+      <section class="imgpara">
+        <img src="img1.avif" />
+        <p>This is an image</p>
+      </section>
+
+      <section class="imgpara">
+        <img src="img2.avif" />
+        <p>This is an image</p>
+      </section>
+
+      <section class="imgpara">
+        <img src="img3.avif" />
+        <p>This is an image</p>
+      </section>
+
+      <section class="imgpara">
+        <img src="img1.avif" />
+        <p>This is an image</p>
+      </section>
+    </section>
+
+    <footer>
+      <article class="leftside">
+        <img src="footer_img.avif" />
+        <section class="footerinfo">
+          <h1>About me</h1>
+          <p>
+            I'm a paragraph. Click here to add your own text and edit me. It’s<br>
+            easy. Just click “Edit Text” or double click me to add your own<br>
+            content and make changes to the font.
+          </p>
+          <a>Read More</a>
+        </section>
+      </article>
+      <section class="rightside">
+        <h1>Join my Mailing List</h1>
+        <section>
+          <h1>Email*</h1>
+
+          <input
+            type="email"
+            id="email"
+            class="form-input"
+            placeholder="Enter your email here"
+            required
+          />
+
+          <section class="checkbox-group">
+            <input
+              type="checkbox"
+              id="subscribe"
+              class="checkbox-input"
+              required
+            />
+            <label for="subscribe"
+              >Yes, subscribe me to your newsletter. *</label>
+          </section>
+          <button type="submit" class="submit-btn">Subscribe Now</button>
+        </section>
+      </section>
+    </footer>
+  </body>
+</html>
